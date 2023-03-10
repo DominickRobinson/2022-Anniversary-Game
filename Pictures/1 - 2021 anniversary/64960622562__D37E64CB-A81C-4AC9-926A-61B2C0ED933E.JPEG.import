@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/64960622562__D37E64CB-A81C-4AC9-926A-61B2C0ED933E.JPEG-10079ac34f0eaab47d98f5aa7063dc4b.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Pictures/1 - 2021 anniversary/64960622562__D37E64CB-A81C-4AC9-926A-61B2C0ED933E.JPEG"
+dest_files=[ "res://.import/64960622562__D37E64CB-A81C-4AC9-926A-61B2C0ED933E.JPEG-10079ac34f0eaab47d98f5aa7063dc4b.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

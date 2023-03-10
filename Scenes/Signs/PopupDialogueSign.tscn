@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Objects/bigger_assets.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Objects/DialogueFrame.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Signs/PopupDialogueSign.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16, 8 )
+
+[node name="DialogueSign" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 3
+frame = 14
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Control" parent="." instance=ExtResource( 2 )]
+margin_top = -32.0
+margin_bottom = -32.0
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

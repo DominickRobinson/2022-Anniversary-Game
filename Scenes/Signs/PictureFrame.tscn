@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Misc/m3x6.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/Signs/PictureFrame.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[node name="PictureFrame" type="Control"]
+margin_left = -40.0
+margin_top = -72.0
+margin_right = 40.0
+margin_bottom = -32.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Frame" type="ColorRect" parent="."]
+margin_left = -2.0
+margin_top = -9.0
+margin_right = 82.0
+margin_bottom = 68.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Picture" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -40.0
+margin_top = -27.0
+margin_right = 40.0
+margin_bottom = 18.0
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_top = 40.0
+margin_right = 80.0
+margin_bottom = 66.0
+color = Color( 0.384314, 0.384314, 0.384314, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 2.0
+margin_top = 39.0
+margin_right = 154.0
+margin_bottom = 89.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 1 )
+text = "dab"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
